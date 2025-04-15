@@ -1,0 +1,163 @@
+/* CARD ANIMADA */
+/* From Uiverse.io by vamsidevendrakumar */
+
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: table;
+}
+body {
+  background-color: rgb(247, 196, 101);
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+#app {
+  margin-bottom: 100px;
+}
+
+/* HEADER  */
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #ffffff;
+  align-items: center;
+}
+
+.header > h1 {
+  color: rgb(247, 196, 101);
+}
+
+.header > input {
+  background: #fff;
+  border-radius: 15px;
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid rgb(247, 196, 101);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header > input:focus{
+  transform: scale(1.2);
+  background-color: rgb(255, 224, 167);
+  transition: 0.3s;
+}
+
+/* TITULO */
+h3 {
+  color: white;
+  padding: 20px;
+  font-weight: lighter;
+  border-bottom: 3px solid white;
+}
+
+/* CARDS */
+#character-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+  padding: 20px 100px;
+  justify-items: center;
+}
+
+.card {
+  display: block;
+  width: 350px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: white;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 4px solid #000000;
+  border-radius: 5px;
+  font-size: 24px;
+  transform: rotateY(0deg);
+  box-shadow: 3px 5px 0px rgb(0, 0, 0);
+}
+
+.card-back {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #000000;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 15px;
+  transform: rotateY(180deg);
+}
+
+/* INFO CARDS */
+.card-img {
+  width: 150px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 25px;
+  width: 50%;
+}
+
+.card-info > p {
+  margin: 2px;
+}
+.char-status {
+  line-height: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.alive {
+  color: green;
+}
+
+.dead {
+  color: red;
+}
+/* FOOTER */
+.footer {
+  background-color: rgb(223, 223, 223);
+  display: table-row;
+  height: 0;
+}
+.footer > p {
+  padding: 0px 30px;
+  color: grey;
+}

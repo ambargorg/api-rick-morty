@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/morty.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Rick & Morty</title>
+  </head>
+  <body>
+    <div id="app" >
+      <header class="header">
+        <h1>Rick and Morty API</h1>
+          <input type="text" id="search" placeholder="Buscar" />
+      </header>
+      <section>
+        <h3>Lista de Personajes:</h3>
+
+        <div id="character-list">
+          <p id="no-results" style="display: none; color: red;">No se encontraron personajes.</p>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p>Creado por Ambar Gorgon - 2PROG1</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
