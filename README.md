@@ -2,6 +2,9 @@
 
 Una simple aplicación web construida con **Vite + JavaScript** que consume la API pública de [Rick and Morty](https://rickandmortyapi.com/) y muestra sus personajes en pantalla.
 
+## 📺 Link al video demostración
+ - [Demo](https://www.youtube.com/watch?v=sjNM1SAwdNE)
+
 ## 🛠 Tecnologías utilizadas
 
 - [Vite](https://vitejs.dev/) 
